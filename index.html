@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acme Tech Consulting — Java · AWS · AI</title>
+  <meta name="description" content="Specialized consulting in Java engineering, AWS cloud, and AI solutions. We help teams ship secure, scalable software that drives measurable outcomes." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Acme Tech Consulting — Java · AWS · AI" />
+  <meta property="og:description" content="Specialized consulting in Java, AWS, and AI to help your team move faster with confidence." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/og.png" />
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    /* Page-specific tweaks */
+    .hero .kicker { letter-spacing: .12em; text-transform: uppercase; font-weight:700; color: var(--accent); }
+    .hero h1 strong { color: var(--accent); }
+    .gradient-bar { height: 2px; background: linear-gradient(90deg, var(--accent), #60a5fa, #22d3ee, var(--accent)); filter: blur(.3px); }
+    .trust-badges img { height: 28px; opacity:.85; }
+    .stats { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); }
+    .stat { background: var(--card); border:1px solid #1f2937; border-radius: var(--radius); padding: 1rem; text-align:center; }
+    .stat .num { font-size: 1.8rem; font-weight:800; }
+    .pill { display:inline-block; border:1px solid #233046; padding:.35rem .6rem; border-radius:999px; font-size:.85rem; color:var(--muted); }
+    .services .card h3 svg { vertical-align:-3px; margin-right:.35rem; }
+    .note { font-size:.9rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#" class="brand">Acme<span class="accent">Consulting</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Toggle navigation</span> ☰
+      </button>
+      <ul id="nav-menu" class="nav-menu" data-collapsible="true">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#cases">Case Studies</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="pill" href="#contact">Book a discovery call</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="gradient-bar"></div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero reveal">
+      <div class="container hero-inner">
+        <p class="kicker">Java · AWS · AI Consulting</p>
+        <h1>Ship secure, scalable systems with a partner who <strong>knows the stack</strong>.</h1>
+        <p class="lead">We combine deep expertise in Java engineering, AWS architecture, and applied AI to help you modernize faster—without compromising reliability or cost.</p>
+        <div class="cta">
+          <a class="button" href="#contact">Book a discovery call</a>
+          <a class="button button-outline" href="#services">See what we do</a>
+        </div>
+        <div class="trust-badges" aria-label="Trusted by">
+          <p class="muted" style="margin-top:.75rem">Trusted by engineering & product teams. <span class="note">Add your logos and certifications here.</span></p>
+          <div class="grid" style="grid-template-columns:repeat(5, minmax(80px, 1fr)); align-items:center;">
+            <div class="card" aria-hidden="true" style="padding:.7rem; text-align:center;">LOGO</div>
+            <div class="card" aria-hidden="true" style="padding:.7rem; text-align:center;">LOGO</div>
+            <div class="card" aria-hidden="true" style="padding:.7rem; text-align:center;">LOGO</div>
+            <div class="card" aria-hidden="true" style="padding:.7rem; text-align:center;">LOGO</div>
+            <div class="card" aria-hidden="true" style="padding:.7rem; text-align:center;">LOGO</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section reveal">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <div class="num" data-counter="28">0</div>
+            <div>Java / cloud projects delivered</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-counter="99.9">0</div>
+            <div>Targeted uptime designs</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-counter="40">0</div>
+            <div>Engineers coached & upskilled</div>
+          </div>
+          <div class="stat">
+            <div class="num" data-counter="7">0</div>
+            <div>Industries served</div>
+          </div>
+        </div>
+        <p class="note" style="margin-top:.5rem">Replace the counters with your real metrics.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section alt reveal services">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="grid">
+          <article class="card lift">
+            <h3>Java Engineering</h3>
+            <p>From greenfield to modernization: JVM performance tuning, microservices, Spring Boot, REST/GraphQL APIs, and CI/CD. We build maintainable systems that scale.</p>
+            <ul class="checklist">
+              <li>Architecture & code audits</li>
+              <li>Modernization & refactoring</li>
+              <li>Observability & resilience patterns</li>
+            </ul>
+          </article>
+          <article class="card lift">
+            <h3>AWS Cloud</h3>
+            <p>Design and operate secure, cost-efficient platforms aligned to AWS Well‑Architected pillars—reliability, security, performance, cost, operational excellence, and sustainability.</p>
+            <ul class="checklist">
+              <li>Landing zones & multi-account strategy</li>
+              <li>Migration, cost optimization, backup & DR</li>
+              <li>IaC with Terraform/CloudFormation</li>
+            </ul>
+          </article>
+          <article class="card lift">
+            <h3>Applied AI</h3>
+            <p>Pragmatic AI for the real world: ML workflows and LLM-powered features with guardrails, evaluation, and MLOps to move from prototype to production.</p>
+            <ul class="checklist">
+              <li>Use‑case discovery & rapid prototyping</li>
+              <li>Retrieval‑augmented generation (RAG)</li>
+              <li>Monitoring, drift, and model lifecycle</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cta" style="margin-top:1rem">
+          <a class="button" href="#contact">Discuss your project</a>
+          <span class="muted">or</span>
+          <a class="link" href="#cases">View case studies</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH -->
+    <section id="approach" class="section reveal">
+      <div class="container">
+        <h2>Our Approach</h2>
+        <div class="grid">
+          <article class="card step">
+            <h3>1 · Discover</h3>
+            <p>Clarify goals, constraints, and success metrics. Align stakeholders and reduce delivery risk early.</p>
+          </article>
+          <article class="card step">
+            <h3>2 · Design</h3>
+            <p>Target architecture, backlog, and roadmap—right-sized to your team and budget.</p>
+          </article>
+          <article class="card step">
+            <h3>3 · Build</h3>
+            <p>Iterative delivery with quality gates, IaC, and observability from day one.</p>
+          </article>
+          <article class="card step">
+            <h3>4 · Launch & Scale</h3>
+            <p>Operational handover, cost controls, and continuous improvement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="cases" class="section alt reveal">
+      <div class="container">
+        <h2>Case Studies</h2>
+        <div class="grid">
+          <article class="card lift">
+            <h3>Payments platform modernization</h3>
+            <p>Migrated Java monolith to AWS microservices with automated blue/green deploys, improving release speed and reliability.</p>
+            <p class="muted">Outcome: faster releases, fewer incidents, lower infra cost.</p>
+          </article>
+          <article class="card lift">
+            <h3>Intelligent support assistant</h3>
+            <p>Built a secure RAG assistant integrated with internal knowledge to reduce resolution time and improve CSAT.</p>
+            <p class="muted">Outcome: lower handle time, consistent answers.</p>
+          </article>
+          <article class="card lift">
+            <h3>Observability & performance uplift</h3>
+            <p>End‑to‑end tracing and JVM tuning cut p95 by 38% and exposed hidden failure modes before customers felt them.</p>
+            <p class="muted">Outcome: better UX and stability.</p>
+          </article>
+        </div>
+        <p class="note" style="margin-top:.5rem">Replace with your real client stories and metrics.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2>About us</h2>
+        <p><strong>We’re a consulting team with specialized knowledge in Java, AWS, and AI.</strong> Our mission is to help engineering and product leaders achieve outcomes—not just deliverables. We bring clear architecture, high‑quality code, and pragmatic AI to the problems that move your business.</p>
+        <p>Clients choose us when they need to modernize legacy systems, accelerate a roadmap, or add AI capabilities without risking security or uptime. We meet you where you are, transfer knowledge as we go, and leave your team stronger.</p>
+        <ul class="checklist">
+          <li>Principled delivery: reliability, security, and cost awareness baked in</li>
+          <li>Senior experts on the tools you already use</li>
+          <li>Transparent communication and measurable success criteria</li>
+        </ul>
+
+        <details class="business-ref">
+          <summary>Business description (expand)</summary>
+          <pre class="muted" style="white-space:pre-wrap">Business Description (for your reference):
+A professional IT consulting firm specializing in Java engineering, AWS cloud architecture, and practical AI solutions. 
+We help organizations modernize applications, build secure/scalable cloud platforms, and apply AI responsibly to real business problems.
+Services include: architecture & delivery for Java-based systems, AWS migration & optimization aligned to the Well-Architected Framework, and AI integration (ML workflows, LLM-powered apps) with MLOps best practices.
+Ideal clients: product teams and IT leaders who want a reliable partner to deliver outcomes—on time, securely, and with measurable value.
+</pre>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Prefer email? Click below, or send a brief about your project—we’ll reply within 1 business day.</p>
+        <div class="grid" style="grid-template-columns:1.1fr .9fr">
+          <form name="contact" method="POST" data-netlify="true" class="card" style="gap:.5rem">
+            <input type="hidden" name="form-name" value="contact" />
+            <label>Full name<input required name="name" placeholder="Your full name" /></label>
+            <label>Work email<input required type="email" name="email" placeholder="you@company.com" /></label>
+            <label>Company<input name="company" placeholder="Company" /></label>
+            <label>What can we help with?<textarea required name="message" placeholder="A few lines about goals, timelines, constraints"></textarea></label>
+            <button class="button" type="submit">Send message</button>
+            <p class="muted">This static form works on Netlify out of the box. For GitHub Pages, replace with a mailto link or a form service like Formspree.</p>
+          </form>
+          <div class="card">
+            <p><strong>Direct email</strong></p>
+            <p><a class="button button-outline" href="mailto:hello@example.com?subject=Project%20Inquiry%20—%20Java/AWS/AI">hello@example.com</a></p>
+            <p class="muted">Swap with your address or helpdesk alias.</p>
+            <hr style="border-color:#1f2937"/>
+            <p><strong>Availability</strong></p>
+            <p class="muted">New project starts: within 2–4 weeks. Short advisory blocks available sooner.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2025</span> Acme Tech Consulting. Java · AWS · AI.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
